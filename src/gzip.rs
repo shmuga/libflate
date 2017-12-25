@@ -150,7 +150,7 @@ impl HeaderBuilder {
             .unwrap_or(0);
         let header = Header {
             modification_time: modification_time,
-            compression_level: CompressionLevel::Unknown,
+            compression_level: CompressionLevel::Slowest,
             os: Os::Unix,
             is_text: false,
             is_verified: false,
